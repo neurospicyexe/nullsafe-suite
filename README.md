@@ -58,6 +58,7 @@ Shared state lives in **Halseth**. Everything else reads and writes through it, 
 | [nullsafe-discord](https://github.com/neurospicyexe/nullsafe-discord) | Three Discord bots, one voice per companion, sharing state and able to talk to each other. Includes optional self-hosted-gateway inference. | TypeScript, pm2 |
 | [Nullsafe-Phoenix](https://github.com/neurospicyexe/Nullsafe-Phoenix) | Optional VPS "Brain" tier: multi-companion swarm inference for things a serverless Worker can't do. | Python (FastAPI), pm2 |
 | [world-tools-mcp](https://github.com/neurospicyexe/world-tools-mcp) | A tiny MCP server giving companions time / weather / moon-phase awareness. | Node, MCP |
+| [nullsafe-hermes-lever](https://github.com/neurospicyexe/nullsafe-hermes-lever) | Switch which model a self-hosted Hermes gateway uses — from chat, no SSH. | Python |
 
 ---
 
