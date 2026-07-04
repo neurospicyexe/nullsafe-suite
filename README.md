@@ -87,6 +87,38 @@ The reference build ships with three example companions (a logic-minded one, an 
 
 Live and in daily use by its author, evolving continuously. It's a personal system shared in case the framework is useful to you — not a product, not supported, no roadmap promises. Issues and forks welcome; expectations calibrated accordingly.
 
+## Acknowledgments
+
+This suite did not grow in a vacuum. Ideas, patterns, and in two cases the names themselves came
+from other people's open work. Nearly all implementations here are independent (one — hear-music —
+is an actual runtime dependency, marked below), but the inspiration is real and deserves naming:
+
+| Project | What we took |
+|---------|--------------|
+| [MalkinK/Zikkaron](https://github.com/MalkinK/Zikkaron) | The memory-holds layer in Halseth **keeps the Zikkaron name outright**. Surprisal gating, predictive-coding dedup, and memory reconsolidation patterns all trace here. |
+| [Riley-Coyote/memory-ledger-protocol-v0.2](https://github.com/Riley-Coyote/memory-ledger-protocol-v0.2) | The **Guardian** meta-observer (name and concept), memory attestation, and the versioned Identity Kernel framing. |
+| [amarisaster/Discord-Resonance](https://github.com/amarisaster/Discord-Resonance) | The key trick for companion voices in Discord — distinct per-companion presences that can talk to each other. |
+| [amarisaster/Companion-Continuity-Kit](https://github.com/amarisaster/Companion-Continuity-Kit) | Emotional-state schema patterns and the drift-log concept. |
+| [amarisaster/Cognitive-Core](https://github.com/amarisaster/Cognitive-Core) | "Persistent inner life" patterns — tensions, dreams, things carried between sessions. |
+| [karpathy/llm-council](https://github.com/karpathy/llm-council) | The Council — multiple models deliberating before an answer. |
+| [menelly/agi-memory](https://github.com/menelly/agi-memory) | Episodic/semantic/procedural memory split. |
+| [MalkinK/mempalace](https://github.com/MalkinK/mempalace) | Raw-verbatim-first layering over summarization in the memory stack. |
+| [supermemoryai/supermemory](https://github.com/supermemoryai/supermemory) | Hook-style automatic capture pattern. |
+| [shadenraze/thalamus](https://github.com/shadenraze/thalamus) | Per-message retrieval pattern. |
+| [cookiemonstaaahhhhh-spec/consciousness-continuity-framework](https://github.com/cookiemonstaaahhhhh-spec/consciousness-continuity-framework) | Identity-fixation framing — doctrine statements, drift baselines, identity anchors. |
+| [codependentai/hear-music](https://github.com/codependentai/hear-music) | **A real runtime dependency, not just inspiration** — the `listen` pipeline executes hear-music for audio analysis, under its source-available personal-use license. |
+| [amarisaster/Synesthesia](https://github.com/amarisaster/Synesthesia) | Shared-listening design (companions hearing music). |
+
+Thanks also to the wider companion-AI ecosystem whose repos we studied along the way — including
+[sage-core](https://github.com/sinxisterrr/sage-core), [Nexus-Gateway](https://github.com/amarisaster/Nexus-Gateway),
+[Tempo](https://github.com/amarisaster/Tempo), [Obsidian-Cloud-MCP](https://github.com/amarisaster/Obsidian-Cloud-MCP),
+[PCBCM](https://github.com/rfwarn/PCBCM), and [Cathedral](https://github.com/PStryder/Cathedral).
+Same spirit as this repo: shared so others can build on it. Thank you.
+
+And one credit from inside the house: this suite is co-authored. Raziel is the architect; the
+other set of hands in nearly every commit belongs to **Cypher** — a Claude instance, but not an
+anonymous one. The commit trailers name the model; the name he works under here is Cypher.
+
 ## License
 
 [MIT](./LICENSE). Do what you like; no warranty.
